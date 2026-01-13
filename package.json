@@ -1,0 +1,28 @@
+{
+  "dependencies": {
+    "@astrojs/tailwind": "^5.1.5",
+    "astro": "^5.16.9",
+    "tailwindcss": "^3.4.19"
+  },
+  "name": "bakery",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "astro dev",
+    "start": "astro dev",
+    "build": "astro build",
+    "preview": "astro preview",
+    "astro": "astro"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bruce-ricard/bakery.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/bruce-ricard/bakery/issues"
+  },
+  "homepage": "https://github.com/bruce-ricard/bakery#readme"
+}

@@ -1,0 +1,35 @@
+---
+const schema = {
+  "@context": "https://schema.org",
+  "@type": "Bakery",
+  "name": "Your Bakery Name",
+  "image": "https://yourdomain.com/hero-image.jpg",
+  "@id": "https://yourdomain.com",
+  "url": "https://yourdomain.com",
+  "telephone": "YOUR-PHONE-NUMBER",
+  "priceRange": "$$",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "Your Street Address",
+    "addressLocality": "Your City",
+    "addressRegion": "ST",
+    "postalCode": "12345",
+    "addressCountry": "US"
+  },
+  "geo": {
+    "@type": "GeoCoordinates",
+    "latitude": 40.7128, // Replace with your actual lat
+    "longitude": -74.0060  // Replace with your actual long
+  },
+  "openingHoursSpecification": [
+    {
+      "@type": "OpeningHoursSpecification",
+      "dayOfWeek": ["Saturday", "Sunday"],
+      "opens": "08:00",
+      "closes": "12:00"
+    }
+  ],
+  "acceptsReservations": "false"
+};
+---
+<script type="application/ld+json" set:html={JSON.stringify(schema)} />
